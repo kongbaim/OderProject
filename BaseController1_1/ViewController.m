@@ -46,10 +46,14 @@
     self.myView.tintColor = [UIColor redColor];
     NSLog(@"myview.bounds:%@",NSStringFromCGRect(self.myView.frame));
     NSLog(@"Hello world");
+    [self add];
     
 }
 
-
+-(void)add{
+    NSString *str = [NSString stringWithFormat:@"天下第一"];
+    NSLog(@"%@",str);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
